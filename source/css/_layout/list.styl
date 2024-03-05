@@ -7,7 +7,7 @@
 .l_main .post-list
   .post-title
     font-weight: 500
-    margin: 1.25rem 0 .75rem 0
+    margin: 1.25rem auto .75rem 0
     line-height: 1.2
     font-size: $fsh4
     border-bottom: none
@@ -25,13 +25,7 @@
   margin: 1rem 0
   border-radius: $border-card
   background: var(--card)
-  @media (prefers-color-scheme: dark)
-    &:hover
-      box-shadow: 0 0 4px -2px $color-theme, 0 0 24px -8px $color-theme
-  @media (prefers-color-scheme: light)
-    box-shadow: $boxshadow-card
-    hover-float()
-  trans1 all
+  hoverable-card()
   overflow: hidden
   z-index: 0
   
